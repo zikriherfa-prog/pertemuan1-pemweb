@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212; /* Warna background gelap premium */
+    color: #ffffff;
+    padding: 0 8%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-icon a {
+    color: #ffffff;
+    font-size: 22px;
+    transition: opacity 0.3s;
+}
+
+.nav-icon a:hover {
+    opacity: 0.7;
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+    padding: 60px 0;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.greeting {
+    color: #888888;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-text h1 span {
+    color: #aaaaaa;
+}
+
+.subtext {
+    color: #888888;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.btn-contact {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 2px solid #ffffff;
+    font-weight: 600;
+    transition: padding-right 0.3s ease;
+}
+
+.btn-contact:hover {
+    padding-right: 10px;
+}
+
+/* HERO IMAGE */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image {
+    width: 380px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 24px;
+    background-color: #252525; 
+}
+
+
+.about-section {
+    padding: 60px 0 100px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about-description {
+    color: #888888;
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #888888;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 5%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-image-container {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        width: 280px;
+        height: 330px;
+    }
+    
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+.about-container {
+    padding: 60px 0 100px 0;
+}
+
+.about-header {
+    margin-bottom: 50px;
+}
+
+.about-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-text-block {
+    flex: 1;
+}
+
+.about-text-block h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.about-bio {
+    color: #888888;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+.btn-instagram:hover {
+    opacity: 0.8;
+}
+
+
+.hobby-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.hobby-card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hobby-card i {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hobby-card p {
+    color: #888888;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 850px) {
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .hobby-grid {
+        width: 100%;
+    }
+}
+
+
+.project-page-container {
+    padding: 60px 0 100px 0;
+}
+
+.project-header {
+    margin-bottom: 50px;
+}
+
+.project-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-img-placeholder {
+    height: 200px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #888888;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-category {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    color: #888888;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.project-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: #aaaaaa;
+}
+
+.project-link i {
+    font-size: 12px;
+}
+
